@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9719047B27BAD6B00055FC47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719047A27BAD6B00055FC47 /* main.swift */; };
+		9719047B27BAD6B00055FC47 /* InterpreterProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719047A27BAD6B00055FC47 /* InterpreterProject.swift */; };
+		9719048327BADB4A0055FC47 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048227BADB4A0055FC47 /* Scanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		9719047727BAD6B00055FC47 /* Interpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Interpreter; sourceTree = BUILT_PRODUCTS_DIR; };
-		9719047A27BAD6B00055FC47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9719047A27BAD6B00055FC47 /* InterpreterProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterProject.swift; sourceTree = "<group>"; };
+		9719048127BAD7610055FC47 /* textfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = textfile.txt; sourceTree = "<group>"; };
+		9719048227BADB4A0055FC47 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		9719047927BAD6B00055FC47 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
-				9719047A27BAD6B00055FC47 /* main.swift */,
+				9719047A27BAD6B00055FC47 /* InterpreterProject.swift */,
+				9719048227BADB4A0055FC47 /* Scanner.swift */,
+				9719048127BAD7610055FC47 /* textfile.txt */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -120,7 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9719047B27BAD6B00055FC47 /* main.swift in Sources */,
+				9719048327BADB4A0055FC47 /* Scanner.swift in Sources */,
+				9719047B27BAD6B00055FC47 /* InterpreterProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

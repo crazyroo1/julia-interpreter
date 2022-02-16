@@ -1,0 +1,6 @@
+This is some text
+It will be printed to the console
+Line
+By
+Line
+:D
