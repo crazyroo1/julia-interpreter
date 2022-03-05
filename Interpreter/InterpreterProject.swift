@@ -10,10 +10,9 @@ import Foundation
 @main
 struct Main {
     static func main() async throws {
-        let scanner = Scanner()
+        let scanner = LexicalAnalyzer()
         
-        for line in scanner.lines(of: "textfile.txt") {
-            print(line)
-        }
+        let _ = scanner.tokens(for: scanner.contents(of: "Test1.jl"))
+        
     }
 }
