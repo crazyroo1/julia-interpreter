@@ -4,6 +4,11 @@
 //
 //  Created by Turner Eison on 2/16/22.
 //
+//  CS 4308 / 03
+//  Spring 2022
+//  Sharon Perry
+//  Scanner
+//
 
 import Foundation
 

@@ -4,6 +4,10 @@
 //
 //  Created by Turner Eison on 2/14/22.
 //
+//  CS 4308 / 03
+//  Spring 2022
+//  Sharon Perry
+//
 
 import Foundation
 
@@ -12,7 +16,6 @@ struct Main {
     static func main() async throws {
         let scanner = LexicalAnalyzer()
         
-        let _ = scanner.tokens(for: scanner.contents(of: "Test1.jl"))
-        
+        let tokens = scanner.tokens(for: scanner.contents(of: "Test1.jl"))
     }
 }
