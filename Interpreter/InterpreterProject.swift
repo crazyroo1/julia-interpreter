@@ -4,10 +4,6 @@
 //
 //  Created by Turner Eison on 2/14/22.
 //
-//  CS 4308 / 03
-//  Spring 2022
-//  Sharon Perry
-//
 
 import Foundation
 
