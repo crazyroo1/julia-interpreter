@@ -1,5 +1,5 @@
 //
-//  Statement.swift
+//  Grammar.swift
 //  Interpreter
 //
 //  Created by Turner Eison on 3/16/22.
