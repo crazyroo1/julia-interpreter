@@ -11,7 +11,7 @@
 		9719048327BADB4A0055FC47 /* LexicalAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */; };
 		9719048927BD7BC00055FC47 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048827BD7BC00055FC47 /* Token.swift */; };
 		97213F8027E25D6F0010464E /* SyntaxAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */; };
-		97213F8427E260B90010464E /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F8327E260B90010464E /* Statement.swift */; };
+		97213F8427E260B90010464E /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F8327E260B90010464E /* Grammar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalAnalyzer.swift; sourceTree = "<group>"; };
 		9719048827BD7BC00055FC47 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxAnalyzer.swift; sourceTree = "<group>"; };
-		97213F8327E260B90010464E /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		97213F8327E260B90010464E /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
 		97D57B6827E3B23E0007CD17 /* Test2.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test2.jl; sourceTree = "<group>"; };
 		97D57B6927E3B23E0007CD17 /* Test1.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test1.jl; sourceTree = "<group>"; };
 		97D57B6A27E3B23E0007CD17 /* Test3.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test3.jl; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */,
-				97213F8327E260B90010464E /* Statement.swift */,
+				97213F8327E260B90010464E /* Grammar.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 			files = (
 				97213F8027E25D6F0010464E /* SyntaxAnalyzer.swift in Sources */,
 				9719048927BD7BC00055FC47 /* Token.swift in Sources */,
-				97213F8427E260B90010464E /* Statement.swift in Sources */,
+				97213F8427E260B90010464E /* Grammar.swift in Sources */,
 				9719048327BADB4A0055FC47 /* LexicalAnalyzer.swift in Sources */,
 				9719047B27BAD6B00055FC47 /* Main.swift in Sources */,
 			);
