@@ -8,9 +8,14 @@
 import Foundation
 
 struct SyntaxAnalyzer {
-    func buildProgram(from tokens: [Token]) throws -> Program {
+    func buildProgram(from tokens: [Token], shouldPrint: Bool = false) throws -> Program {
         var tokens = tokens
         let program = try Program(from: &tokens)
+        
+        if shouldPrint {
+            dump(program)
+        }
+        
         return program
     }
 }
