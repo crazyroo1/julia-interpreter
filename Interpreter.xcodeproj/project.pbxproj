@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9719047B27BAD6B00055FC47 /* InterpreterProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719047A27BAD6B00055FC47 /* InterpreterProject.swift */; };
+		9719047B27BAD6B00055FC47 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719047A27BAD6B00055FC47 /* Main.swift */; };
 		9719048327BADB4A0055FC47 /* LexicalAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */; };
 		9719048927BD7BC00055FC47 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048827BD7BC00055FC47 /* Token.swift */; };
 		97213F8027E25D6F0010464E /* SyntaxAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */; };
@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		9719047727BAD6B00055FC47 /* Interpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Interpreter; sourceTree = BUILT_PRODUCTS_DIR; };
-		9719047A27BAD6B00055FC47 /* InterpreterProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterProject.swift; sourceTree = "<group>"; };
+		9719047A27BAD6B00055FC47 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalAnalyzer.swift; sourceTree = "<group>"; };
 		9719048827BD7BC00055FC47 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxAnalyzer.swift; sourceTree = "<group>"; };
@@ -69,17 +69,33 @@
 		9719047927BAD6B00055FC47 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
-				9719047A27BAD6B00055FC47 /* InterpreterProject.swift */,
-				97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */,
-				97213F8327E260B90010464E /* Statement.swift */,
-				9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */,
-				9719048827BD7BC00055FC47 /* Token.swift */,
+				9719047A27BAD6B00055FC47 /* Main.swift */,
+				97D57B6C27E3B2FF0007CD17 /* Parser */,
+				97D57B6D27E3B30D0007CD17 /* Scanner */,
 				97D57B6927E3B23E0007CD17 /* Test1.jl */,
 				97D57B6827E3B23E0007CD17 /* Test2.jl */,
 				97D57B6B27E3B2600007CD17 /* Test2-Fixed.jl */,
 				97D57B6A27E3B23E0007CD17 /* Test3.jl */,
 			);
 			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		97D57B6C27E3B2FF0007CD17 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */,
+				97213F8327E260B90010464E /* Statement.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		97D57B6D27E3B30D0007CD17 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				9719048227BADB4A0055FC47 /* LexicalAnalyzer.swift */,
+				9719048827BD7BC00055FC47 /* Token.swift */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +160,7 @@
 				9719048927BD7BC00055FC47 /* Token.swift in Sources */,
 				97213F8427E260B90010464E /* Statement.swift in Sources */,
 				9719048327BADB4A0055FC47 /* LexicalAnalyzer.swift in Sources */,
-				9719047B27BAD6B00055FC47 /* InterpreterProject.swift in Sources */,
+				9719047B27BAD6B00055FC47 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
