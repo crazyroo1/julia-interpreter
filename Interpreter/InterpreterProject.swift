@@ -13,5 +13,9 @@ struct Main {
         let scanner = LexicalAnalyzer()
         
         let tokens = scanner.tokens(for: scanner.contents(of: "Test1.jl"))
+        
+        let parser = SyntaxAnalyzer()
+        let parseTree = try parser.buildProgram(from: tokens)
+        dump(parseTree)
     }
 }

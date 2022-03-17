@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Token {
+enum Token: Equatable {
     case identifier(String)
 
     case integerLiteral(Int)

@@ -15,7 +15,7 @@ struct LexicalAnalyzer {
     /// - returns: Array containing each token in order
     ///
     /// This function will filter out whitespace & comment lines (lines starting with `//`).
-    func tokens(for fileContents: String) -> [Token] {
+    func tokens(for fileContents: String, shouldPrint: Bool = false) -> [Token] {
         let words: [String] = lines(of: fileContents)
             .filter { !$0.hasPrefix("//") } // get rid of comment lines
             .reduce("") { partialString, nextString in
@@ -29,8 +29,10 @@ struct LexicalAnalyzer {
         
         let tokens = words.map(Token.init)
         
-        for (word, token) in zip(words, tokens) {
-            print("\(word): \(token)")
+        if shouldPrint {
+            for (word, token) in zip(words, tokens) {
+                print("\(word): \(token)")
+            }
         }
         
         return tokens
