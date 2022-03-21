@@ -12,6 +12,8 @@
 		9719048927BD7BC00055FC47 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719048827BD7BC00055FC47 /* Token.swift */; };
 		97213F8027E25D6F0010464E /* SyntaxAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */; };
 		97213F8427E260B90010464E /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97213F8327E260B90010464E /* Grammar.swift */; };
+		97AE158727E90BCC00A1CE7E /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AE158627E90BCC00A1CE7E /* Interpreter.swift */; };
+		97AE158927E90C1C00A1CE7E /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AE158827E90C1C00A1CE7E /* Symbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		9719048827BD7BC00055FC47 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		97213F7F27E25D6F0010464E /* SyntaxAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxAnalyzer.swift; sourceTree = "<group>"; };
 		97213F8327E260B90010464E /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
+		97AE158627E90BCC00A1CE7E /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		97AE158827E90C1C00A1CE7E /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		97D57B6827E3B23E0007CD17 /* Test2.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test2.jl; sourceTree = "<group>"; };
 		97D57B6927E3B23E0007CD17 /* Test1.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test1.jl; sourceTree = "<group>"; };
 		97D57B6A27E3B23E0007CD17 /* Test3.jl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test3.jl; sourceTree = "<group>"; };
@@ -70,12 +74,22 @@
 			isa = PBXGroup;
 			children = (
 				9719047A27BAD6B00055FC47 /* Main.swift */,
+				97AE158A27E90E5900A1CE7E /* Interpreter */,
 				97D57B6C27E3B2FF0007CD17 /* Parser */,
 				97D57B6D27E3B30D0007CD17 /* Scanner */,
 				97D57B6927E3B23E0007CD17 /* Test1.jl */,
 				97D57B6827E3B23E0007CD17 /* Test2.jl */,
 				97D57B6B27E3B2600007CD17 /* Test2-Fixed.jl */,
 				97D57B6A27E3B23E0007CD17 /* Test3.jl */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		97AE158A27E90E5900A1CE7E /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				97AE158627E90BCC00A1CE7E /* Interpreter.swift */,
+				97AE158827E90C1C00A1CE7E /* Symbol.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -156,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AE158727E90BCC00A1CE7E /* Interpreter.swift in Sources */,
 				97213F8027E25D6F0010464E /* SyntaxAnalyzer.swift in Sources */,
 				9719048927BD7BC00055FC47 /* Token.swift in Sources */,
 				97213F8427E260B90010464E /* Grammar.swift in Sources */,
+				97AE158927E90C1C00A1CE7E /* Symbol.swift in Sources */,
 				9719048327BADB4A0055FC47 /* LexicalAnalyzer.swift in Sources */,
 				9719047B27BAD6B00055FC47 /* Main.swift in Sources */,
 			);
