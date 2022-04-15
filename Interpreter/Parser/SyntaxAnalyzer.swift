@@ -10,7 +10,12 @@ import Foundation
 struct SyntaxAnalyzer {
     func buildProgram(from tokens: [Token], shouldPrint: Bool = false) throws -> Program {
         var tokens = tokens
-        let program = try Program(from: &tokens)
+        let program: Program
+        do {
+            program = try Program(from: &tokens)
+        } catch SyntaxAnalyzerError.unexpectedToken(let file, let line) {
+            fatalError("Unexpected token found at \(file):\(line)")
+        }
         
         if shouldPrint {
             dump(program)

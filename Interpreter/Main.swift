@@ -12,7 +12,7 @@ struct Main {
     static func main() async throws {
         let scanner = LexicalAnalyzer()
         
-        let tokens = scanner.tokens(for: scanner.contents(of: "Test2-Fixed.jl"), shouldPrint: false)
+        let tokens = scanner.tokens(for: scanner.contents(of: "Test3.jl"), shouldPrint: false)
         
         let parser = SyntaxAnalyzer()
         let parseTree = try parser.buildProgram(from: tokens, shouldPrint: false)
